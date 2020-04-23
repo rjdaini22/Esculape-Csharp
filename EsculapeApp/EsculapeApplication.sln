@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esculape", "loginForm\Esculape.csproj", "{0F0CB8ED-082C-477A-801F-8727549EE16A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F0CB8ED-082C-477A-801F-8727549EE16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0CB8ED-082C-477A-801F-8727549EE16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0CB8ED-082C-477A-801F-8727549EE16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0CB8ED-082C-477A-801F-8727549EE16A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A50DACBA-E5AF-4245-9EAF-93CC62EECCDC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F0CB8ED-082C-477A-801F-8727549EE16A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>loginForm</RootNamespace>
+    <AssemblyName>loginForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.19\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.19\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mainDeletePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainDeletePatient.Designer.cs">
+      <DependentUpon>mainDeletePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainDeleteDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainDeleteDoctor.Designer.cs">
+      <DependentUpon>mainDeleteDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainDoctorRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainDoctorRegister.Designer.cs">
+      <DependentUpon>mainDoctorRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainPatientRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainPatientRegister.Designer.cs">
+      <DependentUpon>mainPatientRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainFormMedecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainFormMedecin.Designer.cs">
+      <DependentUpon>mainFormMedecin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginMainForm.Designer.cs">
+      <DependentUpon>loginMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainFormSecretaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainFormSecretaire.Designer.cs">
+      <DependentUpon>mainFormSecretaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainFormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainFormAdmin.Designer.cs">
+      <DependentUpon>mainFormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="mainDeletePatient.resx">
+      <DependentUpon>mainDeletePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainDeleteDoctor.resx">
+      <DependentUpon>mainDeleteDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainDoctorRegister.resx">
+      <DependentUpon>mainDoctorRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainFormMedecin.resx">
+      <DependentUpon>mainFormMedecin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginMainForm.resx">
+      <DependentUpon>loginMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainFormAdmin.resx">
+      <DependentUpon>mainFormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainFormSecretaire.resx">
+      <DependentUpon>mainFormSecretaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainPatientRegister.resx">
+      <DependentUpon>mainPatientRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
