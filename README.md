@@ -1,2 +1,11 @@
-# Esculape-C-
-Projet C# Esculape année 2020
+# Esculape-C#
+
+Projet annuel de C#
+
+Tâches restantes :
+
+-Mise en place du calendrier
+
+-Gestion des créneaux
+
+-Modification et suppression des créneaux
